@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParrotWings", "ParrotWings\ParrotWings.csproj", "{45B694A6-2CE0-44D2-8C59-1FD36B829216}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParrotWings.DataLayer", "ParrotWings.DataLayer\ParrotWings.DataLayer.csproj", "{49AA9E3D-2A3D-425E-82E6-7C1991EEEB0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParrotWings.Core", "ParrotWings.Core\ParrotWings.Core.csproj", "{37A908F8-0C1E-4708-BB2F-0EDB41CE60C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{45B694A6-2CE0-44D2-8C59-1FD36B829216}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45B694A6-2CE0-44D2-8C59-1FD36B829216}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45B694A6-2CE0-44D2-8C59-1FD36B829216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AA9E3D-2A3D-425E-82E6-7C1991EEEB0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AA9E3D-2A3D-425E-82E6-7C1991EEEB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AA9E3D-2A3D-425E-82E6-7C1991EEEB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AA9E3D-2A3D-425E-82E6-7C1991EEEB0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A908F8-0C1E-4708-BB2F-0EDB41CE60C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A908F8-0C1E-4708-BB2F-0EDB41CE60C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A908F8-0C1E-4708-BB2F-0EDB41CE60C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A908F8-0C1E-4708-BB2F-0EDB41CE60C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

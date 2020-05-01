@@ -1,3 +1,5 @@
 /v16
 /.vs
 .vs/
+obj/
+bin/
