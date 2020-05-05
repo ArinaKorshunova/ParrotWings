@@ -2,9 +2,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ParrotWings.Core;
+using ParrotWings.DataLayer;
 
 namespace ParrotWings
 {
@@ -28,6 +31,11 @@ namespace ParrotWings
             {
                 configuration.RootPath = "ClientApp/build";
             });
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            services.AddDbContext<ParrotWingsContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default"), 
+                x => x.MigrationsAssembly("ParrotWings.DataLayer")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
